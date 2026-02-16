@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import BookCard from "./components/BookCard";
-import bookShelf from "./data/bookShelf";
-import styles from "./styles/styles";
+import BookCard from "./BookCard";
+import bookShelf from "./bookShelf";
+import styles from "./styles";
 
 export default function App() {
   const savedBooks = JSON.parse(localStorage.getItem("books"));
