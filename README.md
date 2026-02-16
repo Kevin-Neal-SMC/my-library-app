@@ -1,16 +1,23 @@
-# React + Vite
+# Library App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### I built a library app where patrons can view a list of books.
+Additionally, patrons can: 
+Search for books
+Check out books
+Return books
+Filter by availability
+Filter by currently checked out books
 
-Currently, two official plugins are available:
+### Instructions
+Type in the search box to search for a book.
+Use the show all books filter to display all books.
+Use the show available books filter to only display books that can be checked out.
+Use the show checked out books filter to only display books that are currently checked out.
+Enter the patrons name to check out an available book.
+Return a book so that it becomes available again.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Additional features
+When patrons check out a book, a due date is generated. Patrons are given 14 days from the day the book is checked out.
+localStorage automatically saves books, search query, and filter settings.
+useState data persistence on startup.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
