@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../styles/styles";
+import styles from "./styles";
 
 export default function BookCard({ book, checkoutBook, returnBook }) {
   const [patronName, setPatronName] = useState("");
